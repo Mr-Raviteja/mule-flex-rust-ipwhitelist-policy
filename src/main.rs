@@ -26,7 +26,7 @@ impl HttpContext for HttpConfigHeader {
         info!("on_http_request_headers");
         if let Some(_value) = self.get_http_request_header("x-forwarded-for") {
             info!(" before for self has {:?}",self.ip_address_local);
-        for ip in self.ip_address_local {
+        for ip in self.ip_address_local.clone().into_iter() {
            info!("for ip has {}",ip);
             info!(" after for self has {:?}",self.ip_address_local);
                if ip == _value {
