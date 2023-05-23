@@ -1,0 +1,23 @@
+{
+  "title": "Custom IP Whitelisting",
+  "type": "object",
+  "description": "Enforces HTTP authentication matching ip address to set of ip to what is configured in the policy.",
+  "properties": {
+    "ipAddresses": {
+      "title": "Custom IP whiltelisting",
+      "description": "list of ips",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+
+  "unevaluatedProperties": false,
+  "@context": {
+    "@vocab": "anypoint://vocabulary/policy.yaml#",
+    "security": "anypoint://vocabulary/policy.yaml#"
+  },
+  "$id": "custom-ipwhitelisting-simple",
+  "$schema": "https://json-schema.org/draft/2019-09/schema"
+}

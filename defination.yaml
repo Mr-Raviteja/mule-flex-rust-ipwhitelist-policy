@@ -1,0 +1,11 @@
+#%Policy Definition 0.1
+name: Custom IP Whitelisting
+description: Allow service calls to specific set of ip address.
+category: Security
+providedCharacteristics:
+  - IP filtered
+requiredCharacteristics: []
+interfaceScope: ["api", "resource"]
+interfaceTransformation: []
+encryptionSupported: true
+violationCategory: authentication
